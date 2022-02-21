@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3007B6E627C3218B00AB3F6E /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3007B6E527C3218B00AB3F6E /* Target.swift */; };
+		305EB98827BE199800595ACF /* InverseKinematicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EB98727BE199800595ACF /* InverseKinematicsApp.swift */; };
+		305EB98A27BE199800595ACF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EB98927BE199800595ACF /* ContentView.swift */; };
+		305EB98C27BE199A00595ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305EB98B27BE199A00595ACF /* Assets.xcassets */; };
+		305EB98F27BE199A00595ACF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305EB98E27BE199A00595ACF /* Preview Assets.xcassets */; };
+		305EB9CA27C1266400595ACF /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EB9C927C1266400595ACF /* Chain.swift */; };
+		305EB9CC27C1276700595ACF /* Joint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EB9CB27C1276700595ACF /* Joint.swift */; };
+		305F991127C1B3F90036239D /* Unlit.metal in Sources */ = {isa = PBXBuildFile; fileRef = 305F991027C1B3F80036239D /* Unlit.metal */; };
+		305F991B27C2670A0036239D /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305F991527C2670A0036239D /* Mesh.swift */; };
+		305F991C27C2670A0036239D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305F991627C2670A0036239D /* Renderer.swift */; };
+		305F991E27C2670A0036239D /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305F991827C2670A0036239D /* Camera.swift */; };
+		305F992027C2670A0036239D /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305F991A27C2670A0036239D /* Math.swift */; };
+		305F992627C267FD0036239D /* InverseKinematicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305F992327C267FD0036239D /* InverseKinematicsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3007B6E527C3218B00AB3F6E /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		305EB98427BE199800595ACF /* InverseKinematics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InverseKinematics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		305EB98727BE199800595ACF /* InverseKinematicsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InverseKinematicsApp.swift; sourceTree = "<group>"; };
+		305EB98927BE199800595ACF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		305EB98B27BE199A00595ACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		305EB98E27BE199A00595ACF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		305EB99027BE199A00595ACF /* InverseKinematics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InverseKinematics.entitlements; sourceTree = "<group>"; };
+		305EB9C927C1266400595ACF /* Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		305EB9CB27C1276700595ACF /* Joint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joint.swift; sourceTree = "<group>"; };
+		305F991027C1B3F80036239D /* Unlit.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Unlit.metal; sourceTree = "<group>"; };
+		305F991427C2566F0036239D /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		305F991527C2670A0036239D /* Mesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		305F991627C2670A0036239D /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		305F991827C2670A0036239D /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		305F991A27C2670A0036239D /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		305F992327C267FD0036239D /* InverseKinematicsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InverseKinematicsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		305EB98127BE199800595ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		305EB97B27BE199800595ACF = {
+			isa = PBXGroup;
+			children = (
+				305EB98627BE199800595ACF /* InverseKinematics */,
+				305EB98527BE199800595ACF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		305EB98527BE199800595ACF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305EB98427BE199800595ACF /* InverseKinematics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		305EB98627BE199800595ACF /* InverseKinematics */ = {
+			isa = PBXGroup;
+			children = (
+				305EB98727BE199800595ACF /* InverseKinematicsApp.swift */,
+				305EB98927BE199800595ACF /* ContentView.swift */,
+				305F992327C267FD0036239D /* InverseKinematicsView.swift */,
+				305F991627C2670A0036239D /* Renderer.swift */,
+				305F991A27C2670A0036239D /* Math.swift */,
+				305F991527C2670A0036239D /* Mesh.swift */,
+				305F991827C2670A0036239D /* Camera.swift */,
+				305EB9C927C1266400595ACF /* Chain.swift */,
+				305EB9CB27C1276700595ACF /* Joint.swift */,
+				3007B6E527C3218B00AB3F6E /* Target.swift */,
+				305F991427C2566F0036239D /* Bridge.h */,
+				305F991027C1B3F80036239D /* Unlit.metal */,
+				305EB98B27BE199A00595ACF /* Assets.xcassets */,
+				305EB99027BE199A00595ACF /* InverseKinematics.entitlements */,
+				305EB98D27BE199A00595ACF /* Preview Content */,
+			);
+			path = InverseKinematics;
+			sourceTree = "<group>";
+		};
+		305EB98D27BE199A00595ACF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				305EB98E27BE199A00595ACF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		305EB98327BE199800595ACF /* InverseKinematics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305EB99327BE199A00595ACF /* Build configuration list for PBXNativeTarget "InverseKinematics" */;
+			buildPhases = (
+				305EB98027BE199800595ACF /* Sources */,
+				305EB98127BE199800595ACF /* Frameworks */,
+				305EB98227BE199800595ACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InverseKinematics;
+			packageProductDependencies = (
+			);
+			productName = InverseKinematics;
+			productReference = 305EB98427BE199800595ACF /* InverseKinematics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		305EB97C27BE199800595ACF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					305EB98327BE199800595ACF = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 305EB97F27BE199800595ACF /* Build configuration list for PBXProject "InverseKinematics" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 305EB97B27BE199800595ACF;
+			packageReferences = (
+			);
+			productRefGroup = 305EB98527BE199800595ACF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				305EB98327BE199800595ACF /* InverseKinematics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		305EB98227BE199800595ACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305EB98F27BE199A00595ACF /* Preview Assets.xcassets in Resources */,
+				305EB98C27BE199A00595ACF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		305EB98027BE199800595ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305F991C27C2670A0036239D /* Renderer.swift in Sources */,
+				305F991127C1B3F90036239D /* Unlit.metal in Sources */,
+				305F991B27C2670A0036239D /* Mesh.swift in Sources */,
+				305EB9CA27C1266400595ACF /* Chain.swift in Sources */,
+				305EB9CC27C1276700595ACF /* Joint.swift in Sources */,
+				305EB98A27BE199800595ACF /* ContentView.swift in Sources */,
+				305F992627C267FD0036239D /* InverseKinematicsView.swift in Sources */,
+				3007B6E627C3218B00AB3F6E /* Target.swift in Sources */,
+				305F991E27C2670A0036239D /* Camera.swift in Sources */,
+				305EB98827BE199800595ACF /* InverseKinematicsApp.swift in Sources */,
+				305F992027C2670A0036239D /* Math.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		305EB99127BE199A00595ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		305EB99227BE199A00595ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		305EB99427BE199A00595ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InverseKinematics/InverseKinematics.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InverseKinematics/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.graphicskorea.InverseKinematics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = InverseKinematics/Bridge.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		305EB99527BE199A00595ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InverseKinematics/InverseKinematics.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InverseKinematics/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.graphicskorea.InverseKinematics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = InverseKinematics/Bridge.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		305EB97F27BE199800595ACF /* Build configuration list for PBXProject "InverseKinematics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305EB99127BE199A00595ACF /* Debug */,
+				305EB99227BE199A00595ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305EB99327BE199A00595ACF /* Build configuration list for PBXNativeTarget "InverseKinematics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305EB99427BE199A00595ACF /* Debug */,
+				305EB99527BE199A00595ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 305EB97C27BE199800595ACF /* Project object */;
+}
